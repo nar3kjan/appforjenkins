@@ -18,7 +18,7 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
           SSH_PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY }}
-          SOURCE: "./"
+          SOURCE: "../"
           REMOTE_HOST: ${{ secrets.HOSTNAME }}
           REMOTE_USER: "ec2-user"
           TARGET: ${{ secrets.TARGET }}
